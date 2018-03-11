@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.main1{
+    display: flex;
+    flex-direction: row;
+}
+.data1{
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    margin-top: 13px;
+    margin-left: 50px;
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+}
+.btnAdd{
+    margin-left: 50px;
+    margin-top: 10px;
+}

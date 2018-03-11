@@ -1,0 +1,43 @@
+<div class="main">
+ 
+<div class="main0">
+<p>{{'Name:'}} {{name}} </p>
+<p>{{'Last name:'}} {{lastName}} </p>
+<p>{{'Age:'}} {{age}} </p>
+<p>{{'Job:'}} {{job}} </p>
+<p>{{'Company:'}} {{company}} </p>
+<button class="btn btn-primary" (click) = "showDiv()">Edit</button>
+</div>
+<div class="main1" *ngIf = "isShow">
+  <div class="data">
+  <p>Name:</p> 
+  <p>Last name:</p>
+  <p>Age:</p>
+  <p>Job:</p>
+  <p>Company:</p>
+  <button (click) = "closeDiv()"  class="btn btn-primary">Close</button>
+</div>
+<div class="data1">
+  <input type="text" [(ngModel)] = "name" >
+  <input type="text" [(ngModel)] = "lastName">
+  <input type="text" [(ngModel)] = "age">
+  <input type="text" [(ngModel)] = "job">
+  <input type="text" [(ngModel)] = "company">
+</div>
+</div>
+
+
+<div class="skill">
+  <div class="skills">
+<div *ngFor = "let n of skills">
+    <p>{{n}}</p>
+</div>
+<button (click) = "showDiv1()"  class="btn btn-primary">Add new skill</button>
+</div>
+<div class="add" *ngIf = "isShow1">
+<div><input type="text" [(ngModel)] = "newElement"></div>
+<button (click) = "addElement()" class="btnAdd">Add</button>
+</div>
+</div>
+
+</div>
