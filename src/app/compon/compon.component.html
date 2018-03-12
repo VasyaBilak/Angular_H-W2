@@ -1,5 +1,5 @@
 <div class="main">
- 
+  <div class="First">
 <div class="main0">
 <p>{{'Name:'}} {{name}} </p>
 <p>{{'Last name:'}} {{lastName}} </p>
@@ -15,7 +15,7 @@
   <p>Age:</p>
   <p>Job:</p>
   <p>Company:</p>
-  <button (click) = "closeDiv()"  class="btn btn-primary">Close</button>
+  <button (click) = "closeDiv()"  class="btn btn-light">Close</button>
 </div>
 <div class="data1">
   <input type="text" [(ngModel)] = "name" >
@@ -25,7 +25,7 @@
   <input type="text" [(ngModel)] = "company">
 </div>
 </div>
-
+</div>
 
 <div class="skill">
   <div class="skills">
@@ -36,7 +36,7 @@
 </div>
 <div class="add" *ngIf = "isShow1">
 <div><input type="text" [(ngModel)] = "newElement"></div>
-<button (click) = "addElement()" class="btnAdd">Add</button>
+<button (click) = "addElement()" class="btn btn-light btnAdd">Add</button>
 </div>
 </div>
 

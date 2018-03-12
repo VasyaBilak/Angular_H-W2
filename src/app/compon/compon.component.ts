@@ -7,13 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ComponComponent  {
 
-  name: string = "Mariana";
-  age: number = 22;
-  lastName: string = "Tsapiv";
+  name: string = "Vasyl";
+  age: number = 26;
+  lastName: string = "Bilak";
   job: string = "Ful-stack developer";
   company: string = "Some other";
   isShow: boolean = false;
   isShow1: boolean = false;
+  newElement: string ;
 
   showDiv() {
     this.isShow = true;

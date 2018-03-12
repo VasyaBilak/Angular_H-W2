@@ -1,11 +1,13 @@
 .main{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     margin-top: 50px;
+    flex-wrap: initial;
 }
 .main1{
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
 }
 .data1{
     display: flex;
@@ -13,7 +15,7 @@
     
 }
 input{
-    margin-top: 13px;
+    margin-top: 10px;
     margin-left: 50px;
 }
 .skill{
@@ -23,4 +25,13 @@ input{
 .btnAdd{
     margin-left: 50px;
     margin-top: 10px;
+}
+.First{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.data1{
+    margin-top: -10px;
 }
